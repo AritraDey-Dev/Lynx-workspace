@@ -1,15 +1,13 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { AiOutlineClose } from 'react-icons/ai'; // Import close icon
+import { AiOutlineClose } from 'react-icons/ai';
 
 const Popup: React.FC = () => {
     const [visible, setVisible] = useState(true);
 
     const closePopup = () => setVisible(false);
 
-    useEffect(() => {
-        // You can add any logic here for side effects if necessary
-    }, []);
+    
 
     return (
         visible && (

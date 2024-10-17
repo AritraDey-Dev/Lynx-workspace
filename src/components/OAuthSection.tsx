@@ -1,10 +1,9 @@
 "use client";
 
 import React from 'react';
-import { CardContainer, CardBody, CardItem } from './ui/3d-card'; // Adjust the import path as necessary
-import Image from 'next/image'; // Import the Image component from Next.js
-import { Button } from './ui/moving-border'; // Adjust the import path as necessary
-import { AiOutlineRight } from 'react-icons/ai'; // Import an arrow icon from react-icons
+import { CardContainer, CardBody, CardItem } from './ui/3d-card'; 
+import Image from 'next/image';
+import { AiOutlineRight } from 'react-icons/ai';
 
 const OAuthSection: React.FC = () => {
     return (
