@@ -11,7 +11,7 @@ import Image from 'next/image'; // Import the Image component from Next.js
 const Home: React.FC = () => {
     // Generate carousel items from project data
     const carouselItems = projects.map((project: Project) => (
-        <div key={project.id} className="rounded-3xl bg-white p-4 shadow-md w-80 md:w-[384px]"> {/* Set item width */}
+        <div  className="rounded-3xl bg-white p-4 shadow-md w-80 md:w-[384px]"> {/* Set item width */}
             <Image
                 src={project.src}
                 alt={project.title}
@@ -29,11 +29,11 @@ const Home: React.FC = () => {
         <div className="container mx-auto p-6">
             <Header />
             <ServiceIcons />
-            <Carousel items={carouselItems} /> {/* Pass carouselItems as props */}
+            <Carousel items={carouselItems} /> 
             <ComingSoon />
             <OAuthSection />
-            {/* Position the popup in the bottom right corner */}
-            <div className="fixed bottom-0 right-0 m-4">
+           
+            <div className="fixed  p-4 m-4">
                 <Popup />
             </div>
         </div>

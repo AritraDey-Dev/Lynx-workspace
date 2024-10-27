@@ -13,10 +13,10 @@ const Popup: React.FC = () => {
         visible && (
             <div className="fixed bottom-0 right-0 mb-4 mr-4 bg-gray-900 bg-opacity-70 z-50 transition-opacity duration-300">
                 <div className="bg-white p-6 rounded-lg shadow-lg w-96 transform transition-transform duration-300 scale-100 hover:scale-105">
-                    {/* Gradient Header */}
+                   
                     <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 rounded-t-lg flex justify-between items-center">
                         <h3 className="text-xl font-bold">Live Site Notification</h3>
-                        {/* Close button */}
+                 
                         <button onClick={closePopup} className="text-white hover:text-gray-200">
                             <AiOutlineClose className="h-6 w-6" />
                         </button>
