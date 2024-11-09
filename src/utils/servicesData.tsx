@@ -1,36 +1,30 @@
-import { FaHome, FaTools, FaUser } from 'react-icons/fa'; // Example icons from react-icons
+import { FaHome, FaTools, FaUser } from 'react-icons/fa';
 
 const servicesData = [
     {
-        title: "Lynx ",
+        title: "Lynx",
         description: "Spider",
         url: "https://lynx.spider.nitt.edu/",
-        icon: <FaHome /> // JSX Element
+        icon: <FaHome />
     },
     {
-        title: "Lynx",
+        title: "Tools Service",
         description: "lorem ipsum",
         url: "https://example.com/service2",
-        icon: <FaTools /> // JSX Element
+        icon: <FaTools />
     },
     {
-        title: "sportsfete",
+        title: "SportsFete",
         description: "hello world",
         url: "https://lynx.spider.nitt.edu/",
-        icon: <FaUser /> // JSX Element
+        icon: <FaUser />
     },
     {
-      title: "sportsfete",
-      description: "Hello world",
-      url: "https://lynx.spider.nitt.edu/",
-      icon: <FaUser /> // JSX Element
-  },
-  {
-    title: "gym reg",
-    description: "Lynx-web",
-    url: "https://lynx.spider.nitt.edu/",
-    icon: <FaUser /> // JSX Element
-}
+        title: "Gym Registration",
+        description: "Lynx-web",
+        url: "https://lynx.spider.nitt.edu/",
+        icon: <FaUser />
+    }
 ];
 
 export default servicesData;

@@ -1,43 +1,47 @@
 export interface Project {
+    id: number;
     src: string;
     title: string;
     category: string;
-    description: string; // Add this if you want a description
+    description: string;
 }
 
 const projects: Project[] = [
     {
-        src: '/images/Untitled.jpeg', // Ensure this path is correct
+        id: 1,
+        src: '/images/Untitled.jpeg',
         title: 'Project One',
         category: 'Web Development',
         description: 'A description of Project One',
     },
     {
-        src: '/images/Untitled.jpeg', // Update this to a valid path
+        id: 2,
+        src: '/images/Untitled.jpeg',
         title: 'Project Two',
         category: 'Mobile Development',
         description: 'A description of Project Two',
     },
     {
-        src: '/images/Untitled.jpeg', // Update this to a valid path
+        id: 3,
+        src: '/images/Untitled.jpeg',
         title: 'Project Three',
         category: 'Mobile Development',
         description: 'A description of Project Three',
     },
     {
-        src: '/images/Untitled.jpeg', // Update this to a valid path
-        title: 'Project Three',
+        id: 4,
+        src: '/images/Untitled.jpeg',
+        title: 'Project Four',
         category: 'Mobile Development',
-        description: 'A description of Project Three',
+        description: 'A description of Project Four',
     },
     {
-        src: '/images/Untitled.jpeg', // Update this to a valid path
-        title: 'Project Three',
+        id: 5,
+        src: '/images/Untitled.jpeg',
+        title: 'Project Five',
         category: 'Mobile Development',
-        description: 'A description of Project Three',
+        description: 'A description of Project Five',
     },
-
-    // Add more projects with valid image paths as needed
 ];
 
 export default projects;
