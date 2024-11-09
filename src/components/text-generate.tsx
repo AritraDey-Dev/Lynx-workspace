@@ -5,5 +5,5 @@ const words = `Google Workspace plans provide a custom professional email for yo
 `;
 
 export function TextGenerateEffectDemo() {
-  return <TextGenerateEffect words={words} />;
+  return <TextGenerateEffect duration={2} filter={false} words={words} />;
 }
