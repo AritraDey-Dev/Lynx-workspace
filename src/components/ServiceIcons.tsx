@@ -3,7 +3,8 @@ import servicesData from '../utils/servicesData';
 
 const ServiceIcons: React.FC = () => {
     return (
-        <div className="flex flex-wrap justify-center gap-8 mt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
+
             {servicesData.map((service) => (
                 <a
                     key={service.title} // Use service title as the key, assuming it's unique
