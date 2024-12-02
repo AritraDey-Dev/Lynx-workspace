@@ -23,7 +23,7 @@ const OAuthSection: React.FC = () => {
                         Lynx OAuth Registration
                     </h2>
                     <p className="text-center text-sm text-blue-600 mb-3"> 
-                        Register your app to integrate seamlessly with Lynx's OAuth services.
+                        Register your app to integrate seamlessly with Lynx&apos;s OAuth services.
                     </p>
                     <CardItem>
                         <button 
