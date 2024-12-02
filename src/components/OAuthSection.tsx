@@ -7,22 +7,22 @@ import { AiOutlineRight } from 'react-icons/ai';
 
 const OAuthSection: React.FC = () => {
     return (
-        <section className="mt-4 flex  max-w-33rem items-center justify-center px-4 sm:px-6 lg:px-8"> 
-            <CardContainer className="bg-white rounded-lg shadow-lg p-4 w-full max-w-xs sm:max-w-sm transition-transform duration-300 hover:scale-105">
+        <section className="mt-4 flex max-w-33rem items-center justify-center px-4 sm:px-6 lg:px-8">
+            <CardContainer className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 w-full max-w-xs sm:max-w-sm transition-transform duration-300 hover:scale-105">
                 <CardBody>
                     <div className="mb-3 flex justify-center">
                         <Image
                             src="/images/Untitled.jpeg"
                             alt="OAuth Illustration"
-                            width={400} 
-                            height={150} 
-                            className="object-cover rounded-md" 
+                            width={400}
+                            height={150}
+                            className="object-cover rounded-md"
                         />
                     </div>
-                    <h2 className="text-xl font-semibold text-center text-blue-800 mt-3 mb-3"> 
+                    <h2 className="text-xl font-semibold text-center text-blue-800 dark:text-blue-300 mt-3 mb-3">
                         Lynx OAuth Registration
                     </h2>
-                    <p className="text-center text-sm text-blue-600 mb-3"> 
+                    <p className="text-center text-sm text-blue-600 dark:text-blue-400 mb-3">
                         Register your app to integrate seamlessly with Lynx&apos;s OAuth services.
                     </p>
                     <CardItem>

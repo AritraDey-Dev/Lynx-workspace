@@ -20,7 +20,7 @@ const servicesData = [
         icon: <FaUser />
     },
     {
-        title: "Gym Registration",
+        title: "spider",
         description: "Lynx-web",
         url: "https://lynx.spider.nitt.edu/",
         icon: <FaUser />
