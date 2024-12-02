@@ -4,7 +4,7 @@ import React from 'react';
 import { CardContainer, CardBody, CardItem } from './ui/3d-card'; 
 import Image from 'next/image';
 import { AiOutlineRight } from 'react-icons/ai';
-
+//In this certain part after sign up with lynx scetion is empty that is blank in the ui in the card conainer fix that
 const OAuthSection: React.FC = () => {
     return (
         <section className="mt-4 flex max-w-33rem items-center justify-center px-4 sm:px-6 lg:px-8">
