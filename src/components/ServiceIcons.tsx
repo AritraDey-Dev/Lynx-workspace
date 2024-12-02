@@ -7,7 +7,7 @@ const ServiceIcons: React.FC = () => {
 
             {servicesData.map((service) => (
                 <a
-                    key={service.title} // Use service title as the key, assuming it's unique
+                    key={service.title}
                     href={service.url}
                     target="_blank"
                     rel="noopener noreferrer"
