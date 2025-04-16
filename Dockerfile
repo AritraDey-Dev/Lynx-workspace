@@ -1,23 +1,20 @@
-FROM node:18-alpine AS deps
+# Stage 1: Build the application
+FROM node:20 AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --omit=dev
-
-FROM node:18-alpine AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+RUN npm install
 COPY . .
 RUN npm run build
 
-FROM node:18-alpine AS production
+# Stage 2: Production image
+FROM node:20-slim
 WORKDIR /app
-RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs
-ENV NODE_ENV=production
-ENV PORT=3000
-COPY --from=builder /app/public ./public
+COPY --from=builder /app/package*.json ./
+RUN npm install --production
 COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/package.json ./package.json
-COPY --from=deps /app/node_modules ./node_modules
-USER nextjs
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/next.config.js ./next.config.js
+COPY --from=builder /app/next-i18next.config.js ./next-i18next.config.js
+
 EXPOSE 3000
-CMD ["npm", "run", "start"]
+CMD ["npm", "start"]
