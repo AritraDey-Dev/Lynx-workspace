@@ -18,14 +18,14 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        IMAGE_NAME=${{ secrets.DOCKERHUB_USERNAME }}/Lynx-Workspace
+        IMAGE_NAME=${{ secrets.DOCKERHUB_USERNAME }}/lynxworkspace
         TAG=$(date +%Y%m%d%H%M%S)
         docker build -t $IMAGE_NAME:$TAG .
         docker tag $IMAGE_NAME:$TAG $IMAGE_NAME:latest
 
     - name: Push the Docker image
       run: |
-        IMAGE_NAME=${{ secrets.DOCKERHUB_USERNAME }}/Lynx-Workspace
+        IMAGE_NAME=${{ secrets.DOCKERHUB_USERNAME }}/lynxworkspace
         TAG=$(date +%Y%m%d%H%M%S)
         docker push $IMAGE_NAME:$TAG
         docker push $IMAGE_NAME:latest
